@@ -4,22 +4,30 @@
 
 body {
     background-color: lightslategrey;
+    touch-action: pinch-zoom;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 3.5em;
+    font-weight: 700;
+    text-shadow: 2px 2px black;
     text-align: center;
     margin-top: 35px;
 }
 
 .grid {
-    margin-left: 35%;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 6%;
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
-    height: 242px;
-    width: 282px;
+    height: 604px;
+    width: 702px;
+    /* height: 484px;
+    width: 562px; */
+    /* height: 242px;
+    width: 282px; */
     cursor: pointer;
 }
 
@@ -28,8 +36,8 @@ h2 {
 }
 
 .cell {
-    height: 40px;
-    width: 40px;
+    height: 100px;
+    width: 100px;
     border-top: 1px solid black;
     border-left: 1px solid black;
 }
@@ -46,11 +54,15 @@ h2 {
 }
 
 .player-one {
-    background-color: red;
+    background-color: darkred;
     border-radius: 100%;
 }
 
 .player-two {
-    background-color: blue;
+    background-color: darkblue;
     border-radius: 100%;
+}
+
+#result {
+    color: green;
 }
