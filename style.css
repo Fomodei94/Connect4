@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightslategrey;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.grid {
+    margin-left: 35%;
+    margin-top: 6%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    height: 242px;
+    width: 282px;
+    cursor: pointer;
+}
+
+.taken {
+    cursor: not-allowed;
+}
+
+.cell {
+    height: 40px;
+    width: 40px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.invisible {
+    display: none;
+}
+
+.replayBtn {
+    margin-left: 42%;
+    font-size: 2.5em;
+    border: 2px solid green;
+    border-radius: 7px;
+}
+
+.player-one {
+    background-color: red;
+    border-radius: 100%;
+}
+
+.player-two {
+    background-color: blue;
+    border-radius: 100%;
+}
