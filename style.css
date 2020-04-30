@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: lightslategrey;
+    background-color: lightgray;
     touch-action: pinch-zoom;
 }
 
@@ -24,9 +24,11 @@ h2 {
     flex-wrap: wrap;
     height: 604px;
     width: 702px;
-    /* height: 484px;
+    /* 80px cells:
+    height: 484px;
     width: 562px; */
-    /* height: 242px;
+    /* 40px cells:
+    height: 242px;
     width: 282px; */
     cursor: pointer;
 }
