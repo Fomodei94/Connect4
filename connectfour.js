@@ -16,6 +16,7 @@ function insertCoin(i) {
             checkBoard(currentPlayer);
             currentPlayer = 2;
             currPlayer.innerHTML = '2';
+            header.style.color = "darkblue";
     } else if(currentPlayer === 2 && 
         !cells[i].classList.contains('taken') &&
         cells[i+7].classList.contains('taken')
@@ -25,6 +26,7 @@ function insertCoin(i) {
             checkBoard(currentPlayer);
             currentPlayer = 1;
             currPlayer.innerHTML = '1';
+            header.style.color = "darkred";
         }
 }
 
@@ -55,7 +57,8 @@ function checkBoard(player) {
             square3.classList.contains('player-one') &&
             square4.classList.contains('player-one')) {
                
-                result.innerHTML = 'Player one wins!'
+                alert('Player One wins!!');
+                result.innerHTML = 'Player one won!'
                 playground.classList.add('invisible');
                 header.classList.add('invisible');
                 replayBtn.classList.remove('invisible');
@@ -69,7 +72,8 @@ function checkBoard(player) {
             square3.classList.contains('player-two') &&
             square4.classList.contains('player-two')) {
  
-                result.innerHTML = 'Player two wins!';
+                alert('Player Two wins!!');
+                result.innerHTML = 'Player two won!';
                 playground.classList.add('invisible');
                 header.classList.add('invisible');
                 replayBtn.classList.remove('invisible');
